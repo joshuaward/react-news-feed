@@ -5,7 +5,9 @@ const NewsItem = ({item}) => {
 		<div className="newsList-item">
 			<div className="image">
 				<a href={item.url} target="_blank" rel="noopener noreferrer">
-					<img src={item.urlToImage} alt={item.publishedAt} />
+					{
+						item.urlToImage === null ? <img src="https://images.pexels.com/photos/207130/pexels-photo-207130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt={item.publishedAt} /> : <img src={item.urlToImage} alt={item.publishedAt} />
+					}
 				</a>
 			</div>
 			<div className="content">
