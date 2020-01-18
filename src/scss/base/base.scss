@@ -1,0 +1,21 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-family: 'Roboto';
+	font-size: 16px;
+	// font-smooth: auto;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #444;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
