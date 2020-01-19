@@ -1,3 +1,35 @@
+.selectCountry {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: $spacer*0.75 0;
+	background-color: $color3;
+
+	button {
+		flex:  0 0 30%;
+		margin: $spacer*0.25;
+		border: 2px solid $color1;
+		background-color: transparent;
+		color: $color1;
+		font-family: $robotoCondensed;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: 0.25s;
+		&:hover,
+		&.active {
+			background-color: $white;
+			border: 2px solid $white;
+			color: $color2;
+		}
+		@media (min-width: 768px) {
+			flex: 0 0 auto;
+		}
+	}
+}
+
 .newsList {
 	display: flex;
 	flex-direction: column;
@@ -21,15 +53,16 @@
 			justify-content: center;
 			margin: 0 $spacer*0.5;
 			padding: $spacer*0.625 $spacer*1.875;
-			background-color: $color1;
+			background-color: $color3;
 			border: 0;
 			border-radius: 5px;
-			color: $white;
+			color: $color1;
 			font-size: 1rem;
 			cursor: pointer;
 			transition: 0.25s;
 			&:hover {
 				background-color: $color2;
+				color: $white;
 			}
 		}
 	}
