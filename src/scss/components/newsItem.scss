@@ -101,11 +101,14 @@
 		border-radius: 0.3125rem;
 		color: white;
 		font-family: 'Roboto Condensed';
-		font-size: 1rem;
+		font-size: 0.875rem;
+		font-weight: 700;
 		text-decoration: none;
+		text-transform: uppercase;
 		transition: 0.25s;
 		&:hover {
-			background-color: $color2;
+			background-color: $color3;
+			color: $color1;
 		}
 	}
 }

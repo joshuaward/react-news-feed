@@ -1,7 +1,51 @@
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 100px 0;
+.footerMain {
+	display: block;
+	padding: $spacer*3.125 0;
 	background-color: $color4;
+
+	&-inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 $spacer*1.25;
+		@media (min-width: 1200px) {
+			width: 1100px;
+		}
+	}
+
+	.logo {
+		color: #fff;
+		font-family: 'Roboto Condensed';
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-shadow: 1px 1px 0 $text;
+	}
+
+	.address,
+	.phone,
+	.copyright,
+	.info {
+		color: rgba($whitesmoke,0.6);
+	}
+	.address {
+		margin-bottom: $spacer*0.5;
+	}
+	.phone {
+		margin-bottom: $spacer;
+		color: $color2;
+		font-size: 0.875rem;
+	}
+	.copyright {
+		font-size: 0.625rem;
+	}
+	.info {
+		&:last-child {
+			h4 {
+				color: $color2;
+			}
+			text-align: right;
+		}
+	}
 }
