@@ -20,7 +20,8 @@ const NewsItem = ({item}) => {
 						{item.author}
 					</span>
 					<span className={item.source.name === 'Fox News' ? 'source warning' : 'source'} title={item.source.name === 'Fox News' ? 'Not a reliable source' : ''}>
-						<i className="fas fa-bolt"></i>
+						{item.source.name === 'Fox News' ? <i className="fas fa-exclamation-circle"></i> : <i className="fas fa-bolt"></i>}
+						
 						{item.source.name}
 					</span>
 				</div>

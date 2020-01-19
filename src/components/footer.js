@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Footer = () => {
-	const [ date, setDate ] = useState('');
-
 	return(
 		<footer className="footerMain">
 			<div className="footerMain-inner">
